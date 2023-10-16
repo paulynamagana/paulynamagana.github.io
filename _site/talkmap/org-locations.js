@@ -6,13 +6,18 @@ var addressPoints = [
   ],
   [
     "Monterrey NL, Mexico",
-      25.686613,
+    25.686613,
     -100.316116
   ],
   [
-    "Cambridge, UK",
-    52.205276,
-    0.119167
+    "Hinxton, UK",
+    52.0829,
+    0.1827
+  ],
+  [
+    "Lyon, France",
+    45.74846, //latitude
+    4.84671 //longitude
   ]
   
 ];
