@@ -9,38 +9,24 @@ redirect_from:
 
 {% include base_path %}
 
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.Sc. in Genomic Biotechnology, UANL
 
-Work experience
+* M.Sc. in Biotechnology, Tecnologico de Monterrey
+
+* Ph.D. in Pharmacy, University of Nottingham, 2023 (expected)
+  <p>Division of Advanced Drug Delivery and Tissue Engineering <br></p>
+
+Work-experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Bioinformatician, [**EMBL-EBI**](https://www.ebi.ac.uk/); Cambridge, United Kingdom — Apr 2023 – Present
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Teaching Assistant, [**University of Nottingham**](https://www.nottingham.ac.uk/)); Nottingham, United Kingdom — Feb 2019 – Aug 2023
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Clinical Research Scientist, [**Avant Santé Research Center**](http://en.avantsante.com/); Monterrey, NL, Mexico — Feb 2015 – Aug 2016
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
@@ -58,7 +44,29 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+
+Skills
 ======
-* Currently signed in to 43 different slack teams
+* Structural Bioinformatician
+* Programming & Scripting:
+  * Python
+  * Bash Scripting
+  * SQL
+* Software Development & Version Control:
+  * Git / GitHub / GitLab
+  * API Design & Deployment
+
+
+Certifications & Conferences
+======
+
+- [**Project Execution: Running the Project**](https://www.coursera.org/account/accomplishments/verify/17GWM4RQNZRH)
+
+- [**Computational Structural Biology workshop**](files/EMBO_Computational-Structural-Biology.pdf), EMBL-Heidelberg, Germany
+
+- [**Evaluations of AI Applications in Healthcare**](https://coursera.org/share/5e0c70ca0f279bb73e7c183d07e4be94), Stanford University - Jun 2022
+
+- [**Applied Machine Learning in Python**](https://www.coursera.org/account/accomplishments/certificate/9BTJ9UM2Q3WK), University of Michigan - Dec 2021
+
+- [**Statistics for Genomic Data Science**](https://www.coursera.org/verify/XDSUMP6YYZW4), Johns Hopkins University - Aug 2021
+

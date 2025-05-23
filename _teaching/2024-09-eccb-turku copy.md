@@ -1,0 +1,17 @@
+---
+title: "Exploring and analysing the protein universe with 3D-Beacons and AlphaFold DB"
+collection: teaching
+type: "Workshop"
+permalink: /teaching/2024-eccb
+venue: "23rd European Conference on Computational Biology"
+date: 2024-09-16
+location: "Turky, Finland"
+---
+
+Emerging structural predictions, including over 200 million protein sequences via the AlphaFold Database, are transforming our biological insights. The 3D-Beacons network enhances this revolution by providing straightforward access to a wide array of protein structures, both experimentally determined and computationally predicted.
+
+Foldseek, a tool for searching structurally similar proteins, facilitates the exploration of the protein universe by enabling the rapid comparison of large sets of structures. During the workshop, we will employ Foldseek to navigate structures within the AlphaFold and PDBe databases. Participants will gain hands-on experience with the AlphaFold Database and integrate PDBe-KB for an enriched, knowledge-based analysis. Through hands-on exercises, we will demonstrate how to derive biological insights and utilise these databases for research, focusing on protein variants and ligand interactions. Our goal is to enhance attendees’ ability to conduct structural biology data analysis, improving their understanding of computational models’ reliability and applications.
+
+By delving into both experimentally determined and predicted macromolecular structure models via the 3D-Beacons network, this session offers a comprehensive exploration of the AlphaFold database and PDBe, supplemented by Foldseek. Attendees will leave with a broader toolkit for structural biology, ready to apply computational predictions and knowledge-based insights to their research, thereby deepening their understanding of the protein universe.
+
+Target audience: This tutorial was aimed at bioinformaticians or participants interested in accessing and understanding structural biology data.
