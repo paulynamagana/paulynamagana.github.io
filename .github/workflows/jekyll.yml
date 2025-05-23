@@ -1,0 +1,39 @@
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Set a branch to deploy from
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.x' # Use a recent Ruby version
+          bundler-cache: true # speeds up subsequent runs
+
+      - name: Install Jekyll and dependencies
+        run: |
+          # Install gems from Gemfile, including jekyll-remote-theme
+          bundle install
+
+      - name: Build Jekyll site
+        # This command will use the gems installed by bundle install,
+        # and jekyll-remote-theme will fetch 'just-the-docs'.
+        run: bundle exec jekyll build --destination ./_site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # This action handles deployment to gh-pages branch
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site # Jekyll's default output directory
+          # Important for project sites:
+          # This tells the action to push the content into the 'protviz' subdirectory
+          # on the gh-pages branch, matching your URL structure.
+          destination_dir: protviz

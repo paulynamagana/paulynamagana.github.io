@@ -1,23 +1,22 @@
 var addressPoints = [
   [
-    "Nottingham, UK",
-    52.950001,
-    -1.150000
+    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
+    51.4893335,
+    -0.14405508452768728
   ],
   [
-    "Monterrey NL, Mexico",
-    25.686613,
-    -100.316116
+    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
+    37.8708393,
+    -122.272863
   ],
   [
-    "Hinxton, UK",
-    52.0829,
-    0.1827
+    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
+    34.0536909,
+    -118.242766
   ],
   [
-    "Lyon, France",
-    45.74846, //latitude
-    4.84671 //longitude
+    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
+    37.7792588,
+    -122.4193286
   ]
-  
 ];

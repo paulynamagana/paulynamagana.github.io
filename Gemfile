@@ -1,19 +1,13 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
+group :jekyll_plugins do
+  gem 'jekyll'
+  gem 'jekyll-feed'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-redirect-from'
+  gem 'jemoji'
+  gem 'webrick', '~> 1.8'
+end
 
-
-source "https://rubygems.org"
-gem "jekyll"
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-include-cache", group: :jekyll_plugins
-gem "webrick", "~> 1.8"
-
-#bundle exec jekyll serve
+gem 'github-pages'
+gem 'connection_pool', '2.5.0'

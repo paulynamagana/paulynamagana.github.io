@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
+  <meta property="og:description" name="description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2012-08-14T00:00:00-07:00">
+  <meta property="article:published_time" content="2012-08-14T00:00:00+00:00">
 
 
 
@@ -98,38 +98,20 @@
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
-<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
-<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
-<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
-<meta name="theme-color" content="#ffffff">
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="#ffffff"/>
 <link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
 
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- Support for MatJax -->
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- end custom head snippets -->
 
@@ -148,23 +130,32 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Paulyna Magaña</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="http://localhost:4000/">Paulyna Magaña</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/talks/">Talks & Posters</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/talks/">Talks</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">Teaching</a></li>
           
             
+            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Portfolio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
+          
+            
             <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
           
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/markdown/">Guide</a></li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -176,63 +167,6 @@
 
 
 
-
-  
-    
-
-
-
-
-
-<nav class="breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    
-    
-    
-      
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
-          <meta itemprop="position" content="1" />
-        </li>
-        <span class="sep">/</span>
-      
-      
-        
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="http://localhost:4000posts" itemprop="item"><span itemprop="name">Posts</span></a>
-          <meta itemprop="position" content="2" />
-        </li>
-        <span class="sep">/</span>
-      
-    
-      
-      
-        
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="http://localhost:40002012" itemprop="item"><span itemprop="name">2012</span></a>
-          <meta itemprop="position" content="3" />
-        </li>
-        <span class="sep">/</span>
-      
-    
-      
-      
-        
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="http://localhost:400008" itemprop="item"><span itemprop="name">08</span></a>
-          <meta itemprop="position" content="4" />
-        </li>
-        <span class="sep">/</span>
-      
-    
-      
-      
-        <li class="current">Blog Post number 1</li>
-      
-    
-  </ol>
-</nav>
-  
 
 
 <div id="main" role="main">
@@ -254,56 +188,79 @@
 
   <div class="author__content">
     <h3 class="author__name">Paulyna Magaña</h3>
-    <p class="author__bio">Bioinformatician------.</p>
+    <p class="author__pronouns">she/her</p>
+    <p class="author__bio">Bioinformatician et al.</p>
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
       
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Cambridge, UK</li>
-      
-      
-      
+        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Cambridge, UK</li>
       
       
-       
-      
-        <li><a href="https://twitter.com/paulynamagana"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>EMBL-EBI</li>
       
       
       
+        <li><a href="mailto:none@example.org"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
       
-        <li><a href="https://www.linkedin.com/in//paulynamagana/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
       
+            
       
-      
-      
-      
-      
-        <li><a href="https://github.com/paulynamagana"><i class="fab fa-github" aria-hidden="true"></i> Github</a></li>
+        <li><a href="https://scholar.google.com/citations?user=VyGe8MIAAAAJ=en"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
       
       
       
       
+        <li><a href="https://orcid.org/0009-0004-1524-2966"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      
+                              
       
       
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com//paulynamagana"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+      
+        <li><a href="https://bsky.app/profile//paulynamagana.bsky.social"><i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i>Bluesky</a></li>
       
       
+            
+      
+                  
+                  
+      
+            
+            
+      
+        <li><a href="https://www.linkedin.com/in//paulynamagana/"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
       
       
-      
-      
-      
-      
-        <li><a href="https://scholar.google.com/citations?user=VyGe8MIAAAAJ=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
-      
-      
-      
-        <li><a href="https://orcid.org/0009-0004-1524-2966"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-      
-      
-      
+            
     </ul>
   </div>
 </div>
@@ -324,7 +281,7 @@
           <h1 class="page__title" itemprop="headline">Blog Post number 1
 </h1>
           
-            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+            <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
 
 
   
@@ -335,12 +292,8 @@
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-08-14T00:00:00-07:00">August 14, 2012</time></p>
-        
-        
-             
-        
-    
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-08-14T00:00:00+00:00">August 14, 2012</time></p>
+            
         </header>
       
 
@@ -352,6 +305,9 @@
 <h1 id="you-can-have-many-headings">You can have many headings</h1>
 
 <h2 id="arent-headings-cool">Aren’t headings cool?</h2>
+
+
+        
 
         
       </section>
@@ -401,12 +357,15 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/posts/2012/08/blog-post-1/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://bsky.app/intent/compose?text=http://localhost:4000/posts/2012/08/blog-post-1/" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/2012/08/blog-post-1/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/2012/08/blog-post-1/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="https://x.com/intent/post?text=http://localhost:4000/posts/2012/08/blog-post-1/" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
 </section>
+
 
       
 
@@ -452,7 +411,7 @@
     </h2>
     
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
 
 
   
@@ -462,12 +421,12 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2199-01-01T00:00:00-08:00">January 01, 2199</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2199-01-01T00:00:00+00:00">January 01, 2199</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.
-<strong><a href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="permalink"> Read more</a></strong></p></p>
+    <p class="archive__item-excerpt" itemprop="description"><p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>
+</p>
     
     
     
@@ -494,7 +453,7 @@
     </h2>
     
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
 
 
   
@@ -504,13 +463,13 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-08-14T00:00:00-07:00">August 14, 2015</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-08-14T00:00:00+00:00">August 14, 2015</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
+    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
 
-<strong><a href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="permalink"> Read more</a></strong></p></p>
+</p>
     
     
     
@@ -537,7 +496,7 @@
     </h2>
     
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
 
 
   
@@ -547,13 +506,13 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-08-14T00:00:00-07:00">August 14, 2014</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-08-14T00:00:00+00:00">August 14, 2014</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
+    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
 
-<strong><a href="http://localhost:4000/posts/2014/08/blog-post-3/" rel="permalink"> Read more</a></strong></p></p>
+</p>
     
     
     
@@ -580,7 +539,7 @@
     </h2>
     
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
 
 
   
@@ -590,13 +549,13 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2013-08-14T00:00:00-07:00">August 14, 2013</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2013-08-14T00:00:00+00:00">August 14, 2013</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
+    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
 
-<strong><a href="http://localhost:4000/posts/2013/08/blog-post-2/" rel="permalink"> Read more</a></strong></p></p>
+</p>
     
     
     
@@ -619,22 +578,27 @@
 
         
 
+
 <div class="page__footer-follow">
   <ul class="social-icons">
     
       <li><strong>Follow:</strong></li>
     
     
+      <li><a href="http://github.com//paulynamagana"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     
-    
-      <li><a href="http://github.com/paulynamagana"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
     <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Paulyna Magaña. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+<div class="page__footer-copyright">
+  &copy; 2025 Paulyna Magaña, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2025-05-23
+</div>
 
       </footer>
     </div>
@@ -642,17 +606,6 @@
     <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
-
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 

@@ -11,45 +11,54 @@ redirect_from:
 
 Education
 ======
-* B.Sc. in Genomic Biotechnology, UANL
-
-* M.Sc. in Biotechnology, Tecnologico de Monterrey
-
-* Ph.D. in Pharmacy, University of Nottingham, 2023 (expected)
-  <p>Division of Advanced Drug Delivery and Tissue Engineering <br>
-  Supervisors: Cynthia Bosquillon, Sebastiaan Winkler</p>
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in Jekyll, GitHub University, 2014
+* B.S. in GitHub, GitHub University, 2012
 
 Work experience
 ======
-* Bioinformatician, [**EMBL-EBI**](https://www.ebi.ac.uk/); Cambridge, United Kingdom — Apr 2023 – Present
+* Spring 2024: Academic Pages Collaborator
+  * GitHub University
+  * Duties includes: Updates and improvements to template
+  * Supervisor: The Users
 
-* Teaching Assistant, [**University of Nottingham**](https://www.nottingham.ac.uk/)); Nottingham, United Kingdom — Feb 2019 – Aug 2023
+* Fall 2015: Research Assistant
+  * GitHub University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
 
-* Clinical Research Scientist, [**Avant Santé Research Center**](http://en.avantsante.com/); Monterrey, NL, Mexico — Feb 2015 – Aug 2016
-
+* Summer 2015: Research Assistant
+  * GitHub University
+  * Duties included: Tagging issues
+  * Supervisor: Professor Git
+  
+Skills
+======
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-
-Talks and Posters
+  
+Talks
 ======
   <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html %}
+    {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
+  <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Certifications
+Service and leadership
 ======
-* [**Evaluations of AI Applications in Healthcare**](https://coursera.org/share/5e0c70ca0f279bb73e7c183d07e4be94), 
-Stanford University - Jun 2022
-* [**Applied Machine Learning in Python**](https://www.coursera.org/account/accomplishments/certificate/9BTJ9UM2Q3WK),
-University of Michigan - Dec 2021
-* [**Statistics for Genomic Data Science**](https://www.coursera.org/verify/XDSUMP6YYZW4), Johns Hopkins University - Aug 2021
+* Currently signed in to 43 different slack teams

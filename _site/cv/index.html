@@ -93,38 +93,20 @@
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
-<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
-<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
-<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
-<meta name="theme-color" content="#ffffff">
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="#ffffff"/>
 <link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
 
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- Support for MatJax -->
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- end custom head snippets -->
 
@@ -143,23 +125,32 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Paulyna Magaña</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="http://localhost:4000/research/">Research</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="http://localhost:4000/">Paulyna Magaña</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/talks/">Talks & Posters</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/talks/">Talks</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">Teaching</a></li>
           
             
+            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Portfolio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
+          
+            
             <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
           
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/markdown/">Guide</a></li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -169,33 +160,6 @@
 
     
 
-
-  
-    
-
-
-
-
-
-<nav class="breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    
-    
-    
-      
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
-          <meta itemprop="position" content="1" />
-        </li>
-        <span class="sep">/</span>
-      
-      
-        <li class="current">CV</li>
-      
-    
-  </ol>
-</nav>
-  
 
 
 <div id="main" role="main">
@@ -217,56 +181,79 @@
 
   <div class="author__content">
     <h3 class="author__name">Paulyna Magaña</h3>
-    <p class="author__bio">Bioinformatician------.</p>
+    <p class="author__pronouns">she/her</p>
+    <p class="author__bio">Bioinformatician et al.</p>
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
       
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Cambridge, UK</li>
-      
-      
-      
+        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Cambridge, UK</li>
       
       
-       
-      
-        <li><a href="https://twitter.com/paulynamagana"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>EMBL-EBI</li>
       
       
       
+        <li><a href="mailto:none@example.org"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
       
-        <li><a href="https://www.linkedin.com/in//paulynamagana/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
       
+            
       
-      
-      
-      
-      
-        <li><a href="https://github.com/paulynamagana"><i class="fab fa-github" aria-hidden="true"></i> Github</a></li>
+        <li><a href="https://scholar.google.com/citations?user=VyGe8MIAAAAJ=en"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
       
       
       
       
+        <li><a href="https://orcid.org/0009-0004-1524-2966"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      
+                              
       
       
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com//paulynamagana"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+      
+        <li><a href="https://bsky.app/profile//paulynamagana.bsky.social"><i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i>Bluesky</a></li>
       
       
+            
+      
+                  
+                  
+      
+            
+            
+      
+        <li><a href="https://www.linkedin.com/in//paulynamagana/"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
       
       
-      
-      
-      
-      
-        <li><a href="https://scholar.google.com/citations?user=VyGe8MIAAAAJ=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
-      
-      
-      
-        <li><a href="https://orcid.org/0009-0004-1524-2966"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-      
-      
-      
+            
     </ul>
   </div>
 </div>
@@ -282,48 +269,295 @@
     
 <h1 id="education">Education</h1>
 <ul>
-  <li>
-    <p>B.Sc. in Genomic Biotechnology, UANL</p>
-  </li>
-  <li>
-    <p>M.Sc. in Biotechnology, Tecnologico de Monterrey</p>
-  </li>
-  <li>
-    <p>Ph.D. in Pharmacy, University of Nottingham, 2023 (expected)</p>
-    <p>Division of Advanced Drug Delivery and Tissue Engineering <br />
-Supervisors: Cynthia Bosquillon, Sebastiaan Winkler</p>
-  </li>
+  <li>Ph.D in Version Control Theory, GitHub University, 2018 (expected)</li>
+  <li>M.S. in Jekyll, GitHub University, 2014</li>
+  <li>B.S. in GitHub, GitHub University, 2012</li>
 </ul>
 
 <h1 id="work-experience">Work experience</h1>
 <ul>
-  <li>
-    <p>Bioinformatician, <a href="https://www.ebi.ac.uk/"><strong>EMBL-EBI</strong></a>; Cambridge, United Kingdom — Apr 2023 – Present</p>
+  <li>Spring 2024: Academic Pages Collaborator
+    <ul>
+      <li>GitHub University</li>
+      <li>Duties includes: Updates and improvements to template</li>
+      <li>Supervisor: The Users</li>
+    </ul>
   </li>
-  <li>
-    <p>Teaching Assistant, <a href="https://www.nottingham.ac.uk/"><strong>University of Nottingham</strong></a>); Nottingham, United Kingdom — Feb 2019 – Aug 2023</p>
+  <li>Fall 2015: Research Assistant
+    <ul>
+      <li>GitHub University</li>
+      <li>Duties included: Merging pull requests</li>
+      <li>Supervisor: Professor Hub</li>
+    </ul>
   </li>
-  <li>
-    <p>Clinical Research Scientist, <a href="http://en.avantsante.com/"><strong>Avant Santé Research Center</strong></a>; Monterrey, NL, Mexico — Feb 2015 – Aug 2016</p>
+  <li>Summer 2015: Research Assistant
+    <ul>
+      <li>GitHub University</li>
+      <li>Duties included: Tagging issues</li>
+      <li>Supervisor: Professor Git</li>
+    </ul>
   </li>
 </ul>
 
-<h1 id="publications">Publications</h1>
-<ul></ul>
+<h1 id="skills">Skills</h1>
+<ul>
+  <li>Skill 1</li>
+  <li>Skill 2
+    <ul>
+      <li>Sub-skill 2.1</li>
+      <li>Sub-skill 2.2</li>
+      <li>Sub-skill 2.3</li>
+    </ul>
+  </li>
+  <li>Skill 3</li>
+</ul>
 
-<h1 id="talks-and-posters">Talks and Posters</h1>
-<ul></ul>
+<h1 id="publications">Publications</h1>
+<ul>
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2024-02-17-paper-title-number-4" rel="permalink">Paper Title Number 4
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).</p> 
+    </li>
+ </article>
+</div>
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2015-10-01-paper-title-number-3" rel="permalink">Paper Title Number 3
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).</p> 
+    </li>
+ </article>
+</div>
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2010-10-01-paper-title-number-2" rel="permalink">Paper Title Number 2
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).</p> 
+    </li>
+ </article>
+</div>
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2009-10-01-paper-title-number-1" rel="permalink">Paper Title Number 1
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).</p> 
+    </li>
+ </article>
+</div>
+
+  </ul>
+
+<h1 id="talks">Talks</h1>
+<ul>
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/talks/2014-03-01-talk-3" rel="permalink">Conference Proceeding talk 3 on Relevant Topic in Your Field
+</a>
+      
+    </h3>
+    <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> March 01, 2014</p>
+    <p class="archive__item-excerpt" itemprop="description">Conference proceedings talk at Testing Institute of America 2014 Annual Conference,  Los Angeles, CA, USA</p>
+    </li>
+  </article>
+</div>
+
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/talks/2014-02-01-talk-2" rel="permalink">Talk 2 on Relevant Topic in Your Field
+</a>
+      
+    </h3>
+    <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> February 01, 2014</p>
+    <p class="archive__item-excerpt" itemprop="description">Talk at London School of Testing,  London, UK</p>
+    </li>
+  </article>
+</div>
+
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/talks/2013-03-01-tutorial-1" rel="permalink">Tutorial 1 on Relevant Topic in Your Field
+</a>
+      
+    </h3>
+    <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> March 01, 2013</p>
+    <p class="archive__item-excerpt" itemprop="description">Tutorial at UC-Berkeley Institute for Testing Science,  Berkeley, CA, USA</p>
+    </li>
+  </article>
+</div>
+
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/talks/2012-03-01-talk-1" rel="permalink">Talk 1 on Relevant Topic in Your Field
+</a>
+      
+    </h3>
+    <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> March 01, 2012</p>
+    <p class="archive__item-excerpt" itemprop="description">Talk at UC San Francisco, Department of Testing,  San Francisco, CA, USA</p>
+    </li>
+  </article>
+</div>
+
+
+  </ul>
 
 <h1 id="teaching">Teaching</h1>
-<ul></ul>
-
-<h1 id="certifications">Certifications</h1>
 <ul>
-  <li><a href="https://coursera.org/share/5e0c70ca0f279bb73e7c183d07e4be94"><strong>Evaluations of AI Applications in Healthcare</strong></a>, 
-Stanford University - Jun 2022</li>
-  <li><a href="https://www.coursera.org/account/accomplishments/certificate/9BTJ9UM2Q3WK"><strong>Applied Machine Learning in Python</strong></a>,
-University of Michigan - Dec 2021</li>
-  <li><a href="https://www.coursera.org/verify/XDSUMP6YYZW4"><strong>Statistics for Genomic Data Science</strong></a>, Johns Hopkins University - Aug 2021</li>
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/teaching/2015-spring-teaching-1" rel="permalink">Teaching experience 2
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description"></p> 
+    </li>
+ </article>
+</div>
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/teaching/2014-spring-teaching-1" rel="permalink">Teaching experience 1
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description"></p> 
+    </li>
+ </article>
+</div>
+
+  </ul>
+
+<h1 id="service-and-leadership">Service and leadership</h1>
+<ul>
+  <li>Currently signed in to 43 different slack teams</li>
 </ul>
 
   </div>
@@ -338,22 +572,27 @@ University of Michigan - Dec 2021</li>
 
         
 
+
 <div class="page__footer-follow">
   <ul class="social-icons">
     
       <li><strong>Follow:</strong></li>
     
     
+      <li><a href="http://github.com//paulynamagana"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     
-    
-      <li><a href="http://github.com/paulynamagana"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
     <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Paulyna Magaña. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+<div class="page__footer-copyright">
+  &copy; 2025 Paulyna Magaña, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2025-05-23
+</div>
 
       </footer>
     </div>
@@ -361,17 +600,6 @@ University of Michigan - Dec 2021</li>
     <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
-
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 
