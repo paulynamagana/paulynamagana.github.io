@@ -184,24 +184,24 @@
   </div>
   {% endif %}
   
-  {% if cv.teaching.size > 0 %}
-  <!-- Teaching -->
+  {% if cv.training.size > 0 %}
+  <!-- training -->
   <div class="cv-section">
-    <h2>Teaching</h2>
+    <h2>Training</h2>
     <ul class="cv-list">
-      {% for teaching in cv.teaching %}
+      {% for training in cv.training %}
       <li class="cv-item">
         <div class="cv-item-header">
-          <div class="cv-item-title">{{ teaching.course }}</div>
-          <div class="cv-item-date">{{ teaching.date | slice: 0, 4 }}</div>
+          <div class="cv-item-title">{{ training.course }}</div>
+          <div class="cv-item-date">{{ training.date | slice: 0, 4 }}</div>
         </div>
         <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ teaching.institution }}</div>
-          {% if teaching.role %}
-          <div class="cv-item-detail">Role: {{ teaching.role }}</div>
+          <div class="cv-item-subtitle">{{ training.institution }}</div>
+          {% if training.role %}
+          <div class="cv-item-detail">Role: {{ training.role }}</div>
           {% endif %}
-          {% if teaching.description %}
-          <div class="cv-item-detail">{{ teaching.description }}</div>
+          {% if training.description %}
+          <div class="cv-item-detail">{{ training.description }}</div>
           {% endif %}
         </div>
       </li>

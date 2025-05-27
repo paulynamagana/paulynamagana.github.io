@@ -34,7 +34,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=VyGe8MIAAAAJ=en"
+  googlescholar    : #"https://scholar.google.com/citations?user=VyGe8MIAAAAJ=en"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0004-1524-2966"
   semantic         : # URL
@@ -46,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "/paulynamagana"
+  github           : "paulynamagana"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -214,7 +214,7 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  training:
     output: true
     permalink: /:collection/:path/
   publications:
@@ -248,10 +248,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _training
   - scope:
       path: ""
-      type: teaching
+      type: training
     values:
       layout: single
       author_profile: true

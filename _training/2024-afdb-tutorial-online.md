@@ -1,8 +1,8 @@
 ---
 title: "AlphaFold: A practical guide"
-collection: teaching
+collection: training
 type: "Online course"
-permalink: /teaching/2024-af-online-course
+permalink: /training/2024-af-online-course
 venue: "EMBL-EBI training site"
 date: 2024-03-12
 location: "Hinxton, UK"
