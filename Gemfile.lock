@@ -307,6 +307,7 @@ DEPENDENCIES
   jekyll
   jekyll-feed
   jekyll-redirect-from
+  jekyll-seo-tag
   jekyll-sitemap
   jemoji
   webrick (~> 1.8)

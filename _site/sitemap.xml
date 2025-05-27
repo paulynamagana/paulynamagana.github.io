@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/portfolio/portfolio-1/</loc>
+<loc>http://localhost:4000/portfolio/afdb-notebooks/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/portfolio/protviz/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/publication/2017-microfluidic</loc>
@@ -25,7 +28,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/talks/2023-afdb</loc>
-<lastmod>2014-02-01T00:00:00+00:00</lastmod>
+<lastmod>2023-02-01T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/talks/2024-turku-afdb</loc>
@@ -52,7 +55,7 @@
 <lastmod>2024-11-19T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/training/2024-af-online-course</loc>
+<loc>http://localhost:4000/training/2025-educartion-summit</loc>
 <lastmod>2025-01-15T00:00:00+00:00</lastmod>
 </url>
 <url>

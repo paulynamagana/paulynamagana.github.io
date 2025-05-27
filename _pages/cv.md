@@ -16,16 +16,16 @@ Education
 
 * M.Sc. in Biotechnology, Tecnologico de Monterrey
 
-* Ph.D. in Pharmacy, University of Nottingham, 2023 (expected)
-  <p>Division of Advanced Drug Delivery and Tissue Engineering <br></p>
+* Ph.D. in Pharmacy, University of Nottingham
+  * <p>Division of Advanced Drug Delivery and Tissue Engineering <br></p>
 
 Work-experience
 ======
-* Bioinformatician, [**EMBL-EBI**](https://www.ebi.ac.uk/); Cambridge, United Kingdom — Apr 2023 – Present
+* Bioinformatician, [**EMBL-EBI**](https://www.ebi.ac.uk/). Cambridge, United Kingdom — Apr 2023 – Present
 
-* Teaching Assistant, [**University of Nottingham**](https://www.nottingham.ac.uk/)); Nottingham, United Kingdom — Feb 2019 – Aug 2023
+* Teaching Assistant, [**University of Nottingham**](https://www.nottingham.ac.uk/)). Nottingham, United Kingdom — Feb 2019 – Aug 2023
 
-* Clinical Research Scientist, [**Avant Santé Research Center**](http://en.avantsante.com/); Monterrey, NL, Mexico — Feb 2015 – Aug 2016
+* Clinical Research Scientist, [**Avant Santé Research Center**](http://en.avantsante.com/). Monterrey, Nuevo Leon, Mexico — Feb 2015 – Aug 2016
   
 Publications
 ======

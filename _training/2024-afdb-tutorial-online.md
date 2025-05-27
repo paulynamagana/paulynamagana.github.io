@@ -6,6 +6,8 @@ permalink: /training/2024-af-online-course
 venue: "EMBL-EBI training site"
 date: 2024-03-12
 location: "Hinxton, UK"
+description: "Online training course introducing AlphaFold 2, including its concepts, prediction process, and research applications. Developed in collaboration with Google DeepMind."
+
 ---
 
 This tutorial is aimed at researchers who are interested in using AlphaFold2 to predict protein structures and integrate these predictions into their projects. An undergraduate-level knowledge of protein structure and structural biology would be an advantage.
