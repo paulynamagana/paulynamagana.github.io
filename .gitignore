@@ -12,3 +12,6 @@ Thumbs.db
 # Environment
 .env
 .venv/
+
+# Node.js
+.DS_Store
