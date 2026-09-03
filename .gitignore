@@ -1,14 +1,9 @@
-# Jekyll output
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.vscode/
+# Build output
+dist/
 
-# Ruby
-/vendor/
-.bundle/
-Gemfile.lock
+# Python
+__pycache__/
+*.pyc
 
 # OS/system files
 .DS_Store
@@ -16,3 +11,4 @@ Thumbs.db
 
 # Environment
 .env
+.venv/
